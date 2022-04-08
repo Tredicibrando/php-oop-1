@@ -1,18 +1,18 @@
 <?php
 
 class movie{
-    
+    // chiavi classe pubbliche
     public $title;
     public $subtitle;
     public $vote;
-
+    //costruttore
     function __construct(string $_title, string $_subtitle, float $_vote )
     {
         $this->title = $_title;
         $this->subtitle = $_subtitle;
         $this->vote = $_vote;
     }
-
+    //funzione che mi tira giu il titolazzo
     public function getFullTitle(){
         return $this->title.' - '.$this->subtitle;
     }
@@ -20,6 +20,8 @@ class movie{
 
 }
 
+
+//istanze della classe movie con l'unico film importante nella storia dei film 
 $LOTR_1 = new movie("Il signore degli anelli","la compagnia dell'anello",8.9);
 $LOTR_2 = new movie("Il signore degli anelli","Le due torri",8.8);
 $LOTR_3 = new movie("Il signore degli anelli","Il ritorno del re",9);
@@ -53,7 +55,9 @@ $LOTR_3 = new movie("Il signore degli anelli","Il ritorno del re",9);
                 </span>
 
             </li>
+
             <br>
+
              <li>
 
                 <span>
@@ -69,7 +73,9 @@ $LOTR_3 = new movie("Il signore degli anelli","Il ritorno del re",9);
                 </span>
 
             </li>
+
             <br>
+
              <li>
 
                 <span>
@@ -85,6 +91,7 @@ $LOTR_3 = new movie("Il signore degli anelli","Il ritorno del re",9);
                 </span>
 
             </li>
+
             <br>
         </ul>
 
